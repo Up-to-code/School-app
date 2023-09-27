@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-
+import "dotenv/config"
 /*
  = AIzaSyCBcfSxKljnhvsFNu8tblmWDeXiyir_urE
  = the-schoole.firebaseapp.com
