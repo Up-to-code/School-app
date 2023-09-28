@@ -1,15 +1,19 @@
 "use client";
 import { FaGoogle } from "react-icons/fa";
-import { GoogleAuthProvider , signInWithPopup} from "firebase/auth";
-
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { Auth } from "@/app/db/db";
-function Button_Auth_Google() {
-    const HdailGoogleAuth = async () => {
-        const provider = await new GoogleAuthProvider();
-     
-        return signInWithPopup(Auth,provider)
 
-    };
+function Button_Auth_Google() {
+  const provider = new GoogleAuthProvider();
+
+  const HdailGoogleAuth = async () => {
+    try {
+      const result =await signInWithPopup(Auth, provider);
+      console.log(result.user)
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div>
       <button
