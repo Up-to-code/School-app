@@ -1,7 +1,7 @@
 function Boxes_of_Fuchers({ children, word }) {
   return (
     <div>
-      <div className="relative my-10  z-[-1] px-10">
+      <div className="relative my-10  z-0 px-10">
         <div className="bg-white  min-h-[150px] max-w-xs m-auto rounded shadow py-2 px-4 ">
           <div className="text-white  m-auto font-bold text-lg  flex flex-col justify-center items-center absolute  top-[-35px] bg-red-400 w-max click_icone_in_fucher rounded-full">
             <span className="text-xl ">{children}</span>

@@ -3,7 +3,7 @@ import { SiEasyeda } from "react-icons/si";
 import { MdAvTimer } from "react-icons/md";
 function Cred_of_fucher() {
   return (
-    <div className="flex flex-wrap  justify-between   z-0 h-max">
+    <div className="flex flex-wrap  justify-between    h-max">
       <Boxes_of_Fuchers word="Easy">
         <SiEasyeda />
       </Boxes_of_Fuchers>
@@ -12,11 +12,6 @@ function Cred_of_fucher() {
         <MdAvTimer />
       </Boxes_of_Fuchers>
 
-      {/* <Boxes_of_Fuchers word="Fast">
-        <div className="text-base   ">
-          <BsFire />
-        </div>
-      </Boxes_of_Fuchers> */}
     </div>
   );
 }
