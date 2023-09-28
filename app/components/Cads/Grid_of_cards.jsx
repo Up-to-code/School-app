@@ -2,7 +2,7 @@ import Card from "./Card";
 
 function Grid_of_cards() {
   return (
-    <div className="min-h-screen  flex flex-wrap px-10 py-10  gap-3 items-center justify-between">
+    <div className="min-h-screen  flex flex-wrap px-9 py-10  gap-4 items-center justify-evenly  ">
       <Card />
       <Card />
       <Card />
