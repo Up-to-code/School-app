@@ -2,18 +2,16 @@
 import { AiOutlineMenu } from "react-icons/ai";
 import { useContext, useEffect, useState } from "react";
 import { ChickContext } from "@/app/context/chick";
-import { Auth, app } from "@/app/db/db";
+import Imgae_of_profile from "../Firebase_comp/Imgae_of_profile";
 function Menu() {
   const { active, setActive } = useContext(ChickContext);
   const HadelCkick = () => {
     active ? setActive(false) : setActive(true);
     console.log(console.log(active));
   };
-const [User,setUser] = useState()
+  const [User, setUser] = useState();
 
-useEffect(() => {
-
-}, [])
+  useEffect(() => {}, []);
 
   return (
     <div
@@ -22,7 +20,12 @@ useEffect(() => {
         HadelCkick();
       }}
     >
-      <AiOutlineMenu />
+      <div className="flex gap-4 items-center" >
+        <span className="text-2xl">
+          <Imgae_of_profile />
+        </span>
+        <AiOutlineMenu />
+      </div>
     </div>
   );
 }

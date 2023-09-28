@@ -7,7 +7,7 @@ import { MenuProvider } from "@/app/context/chick";
 function Navbar() {
   return (
     <MenuProvider>
-      <nav className="flex justify-between bg-zinc-50 h-12  items-center px-3">
+      <nav className="flex justify-between bg-zinc-50 h-12  items-center px-3 fixed w-full">
         <Logo />
         <Linkes />
         <Menu />
