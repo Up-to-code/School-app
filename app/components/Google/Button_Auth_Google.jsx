@@ -8,7 +8,7 @@ function Button_Auth_Google() {
 
   const HdailGoogleAuth = async () => {
     try {
-      const result =await signInWithPopup(Auth, provider);
+      const result = await signInWithPopup(Auth, provider);
       console.log(result.user)
     } catch (error) {
       console.log(error);

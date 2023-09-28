@@ -7,7 +7,6 @@ function Menu() {
   const { active, setActive } = useContext(ChickContext);
   const HadelCkick = () => {
     active ? setActive(false) : setActive(true);
-    console.log(console.log(active));
   };
 
   return (

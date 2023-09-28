@@ -6,7 +6,7 @@ import { RiAccountCircleFill } from "react-icons/ri";
 
 function Imgae_of_profile() {
   const UserPhto = useContext(UserContext);
-  console.log();
+  
 
   return (
     <div>
