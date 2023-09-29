@@ -1,8 +1,8 @@
 "use client"
-import { createContext, useState } from "react";
-import {  onAuthStateChanged } from "firebase/auth";
+import { createContext } from "react";
+
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Auth } from "../db/db";
+import { Auth } from "../app/db/db";
 
 export const UserContext = createContext()
 

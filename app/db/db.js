@@ -1,15 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 import "dotenv/config"
-/*
- = AIzaSyCBcfSxKljnhvsFNu8tblmWDeXiyir_urE
- = the-schoole.firebaseapp.com
- = the-schoole
- = the-schoole.appspot.com
- = 22940945203
- = 1:22940945203:web:48e1fb8752aa1aa7b7cc46
 
-*/
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_API_KEY,
@@ -21,5 +14,6 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+ const app = initializeApp(firebaseConfig);
 export const Auth = getAuth(app);
+export const db = getFirestore(app);

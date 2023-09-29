@@ -2,7 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Nav/Navbar";
 const inter = Inter({ subsets: ["latin"] });
-import User_Deta from "./context/User_Deta";
+import User_Deta from "../context/User_Deta";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className + "   m-auto max-w-5xl "}>
+      <body className={inter.className + "   m-auto max-w-5xl  text-zinc-950"}>
         <div className="bg-slate-100  z-0 ">
           <User_Deta>
             <Navbar />

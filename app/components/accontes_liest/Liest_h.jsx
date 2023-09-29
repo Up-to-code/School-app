@@ -2,7 +2,7 @@
 import Acoooent_lg from "./Acoooent_lg"
 import { Users_Images } from "@/public/M_images"
 import { useContext } from "react";
-import { UserContext } from "@/app/context/User_Deta";
+import { UserContext } from "@/context/User_Deta";
 function Liest_h() {
     const UserPhto = useContext(UserContext);
 

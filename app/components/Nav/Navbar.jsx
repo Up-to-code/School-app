@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "./Logo";
 import Menu from "./Menu";
 import Linkes from "./Linkes";
-import { MenuProvider } from "@/app/context/chick";
+import { MenuProvider } from "@/context/chick";
 
 function Navbar() {
   return (
@@ -18,7 +18,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <nav className="z-10  top-10  max-w-5xl flex justify-between bg-zinc-50 h-12  items-center px-3 fixed w-full shadow">
+      <nav className="z-10  top-10  max-w-5xl flex justify-between bg-zinc-50 h-12  items-center px-3 fixed w-full shadow text-zinc-950">
         <Logo />
         <Linkes />
         <Menu />
