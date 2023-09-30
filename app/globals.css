@@ -12,7 +12,7 @@ background-image: url("../public/bg.jpg");
 background-size: cover;
 }
 .cleick{
-    height: calc(100vh - 48px);
+    height: calc(100vh - 88px);
 }
 .someBlick{
     background: rgba(0, 0, 0, 0.325);
